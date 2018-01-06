@@ -31,5 +31,5 @@
 ID: <%= @id %><br>
 ID: <%= params[:id] %><br>
 Page: <%= @page %><br>
-Next page: <%= # @page + 1 %><br><!-- Will throw type arror: No implicit conversion of int type to string cuz PARAMS ARE ALWAYS STRINGS!!! -->
+Next page: <!-- @page alone Will throw type arror: No implicit conversion of int type to string cuz PARAMS ARE ALWAYS STRINGS!!! -->
 Next page: <%= @page.to_i + 1 %><br><!-- Now it will work -->
