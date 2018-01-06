@@ -1,3 +1,25 @@
 <h1>
   Hello world from hello
 </h1>
+
+<% 1 + 1 %> <!-- calculated but didn't output it to the template -->
+<%= 2 + 2 %><!-- calculated AND output to the template -->
+
+<% target = "world" %>
+<%= "Hello #{target}" %><!-- Ruby interpolation -->
+
+<%
+ 3.times do |n|
+   puts n
+ end
+%> <!-- the puts command outputs to the Ruby stdout (console), but using = it will return 3, since that's the return value -->
+
+<%
+ 3.times do |n|
+   puts n
+ end
+%>
+  
+<% 3.times do |n| %>
+  <%= n %><br>
+<% end %><!-- now it works as expected, printing out to our rendered html page -->
