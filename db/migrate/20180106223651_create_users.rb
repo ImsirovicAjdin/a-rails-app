@@ -1,4 +1,15 @@
 class CreateUsers < ActiveRecord::Migration[5.1]
+# TO RUN A MIGRATION USE:
+# rails db:migrate
+# !!!
+# https://stackoverflow.com/questions/10171673/how-to-access-default-rails-sqlite-db HOW TO ACCESS DEFAULT RAILS SQLITE DB
+  # rails db
+  # SQLITE> .tables
+  # SQLite> rails dbconsole
+  # SQLite> .tables
+  # SQLite> select * from users
+# rails db:migrate VERSION=0 -- undoes all the migrations and goes back to zero
+  
 #  def change
 #    create_table :users do |t|
 #
