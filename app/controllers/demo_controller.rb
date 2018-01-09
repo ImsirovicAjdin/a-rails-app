@@ -12,7 +12,7 @@ class DemoController < ApplicationController
   
   def other_hello
     redirect_to(:controller => 'demo', :action => 'index')
-  end
+  end 
   
   def lynda
     redirect_to('http://lynda.com')
